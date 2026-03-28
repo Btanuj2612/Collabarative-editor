@@ -16,7 +16,7 @@ const io = new Server(server, {
 const rooms = new Map();
 
 io.on("connection", (socket) => {
-  console.log("User Connected", socket.id);
+  console.log("User Successfully Connected", socket.id);
   let currentRoom = null;
   let currentUser = null;
 
